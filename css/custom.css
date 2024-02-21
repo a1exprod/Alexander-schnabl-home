@@ -276,7 +276,9 @@ margin-right:33.33%;
 .portrait{
     width: 30rem;
     border-radius: 1rem;
+    align-items: center;
 }
+
 
 
 .bigfont{
@@ -315,13 +317,16 @@ th {
     margin-right: 2rem;
     transition: 0.3s;
  }
+ .smallinfocard {
+
+ }
  .infocard h1,h2,h3,h4,h5,h6{
     padding:0;
     margin:0;
  }
  .infocard:hover{
     transform:scale(1.1);
-    transition: 0.2s;
+    transition: 0.5s;
     
  }
  .infocard:hover :where(h2){
@@ -347,6 +352,7 @@ th {
 
  footer{
     height: fit-content;
+    padding: 0;
 }
 
 dl {

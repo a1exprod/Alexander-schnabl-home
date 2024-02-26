@@ -6,11 +6,6 @@ Logos are not contained.
 
 @import url('standardclasses.css');
 
-img.aboutme {
-    height: 50rem;
-    border-radius: 1rem;
-    align-items: center;
-}
 
 img.projects {
     height: 30rem;
@@ -31,17 +26,34 @@ img.preview-projects {
     border-radius: 1rem;
 }
 
+img.aboutme {
+    width: 75%;
+    height: 75%;
+    border-radius: 1rem;
+    vertical-align: middle;
+    align-items: center;
+    display: inline-flex;
+}
+
+img#cv-portrait {
+    width: 75%;
+    height: 75%;
+    border-radius: 1rem;
+}
+
 
 
 /*RESPONSIVE***************************************************************/
 @media(max-width:750px){
-
+    img#cv-portrait {
+        display: none;
+    }
     
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
 
-    }
+}
     
     
 /* Larger than Desktop HD */

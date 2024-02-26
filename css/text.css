@@ -21,7 +21,12 @@ p {
 }
 
 /**Specific text*******************************************************************/
-
+p#get-in-touch {
+    font-size: 2rem;
+    font-family: aptos-light-italic;
+    text-align: center;
+    margin-left: 3rem;
+}
 
 
 

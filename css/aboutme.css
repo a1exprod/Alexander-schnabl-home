@@ -1,0 +1,11 @@
+@import url('var-fonts.css');
+
+img.aboutme {
+    height: 50rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.align-left {
+    text-align: left;
+}

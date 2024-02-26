@@ -1,5 +1,10 @@
 @import url('var-fonts.css');
 
+
+.align-left {
+    text-align: left;
+}
+
 h1.projects{
     text-align: center;
     color: var(--unclean-white);
@@ -30,11 +35,13 @@ p.text {
     text-align: left;
 }
 
-p.left {
-
+a.project {
+    font-family: aptos;
+    font-size: 2rem;
 }
 
 .project-padding {
     padding-left: 5rem;
     padding-right: 5rem;
 }
+

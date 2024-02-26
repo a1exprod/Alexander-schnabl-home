@@ -1,0 +1,42 @@
+/**
+Additional specific styling for subpages ONLY
+**/
+
+@import url('../technical/standardclasses.css');
+
+h1.projects{
+    text-align: center;
+    color: var(--unclean-white);
+    font-family: aptos-extrabold;
+    
+}
+
+h2.projects {
+    text-align: center;
+    color: var(--unclean-white);
+    font-family: aptos-light;
+}
+
+
+
+p.question {
+    font-size: 4rem;
+    font-family: aptos-black;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+p.text {
+    text-align: left;
+}
+
+a.project {
+    font-family: aptos;
+    font-size: 2rem;
+}
+
+.project-padding {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+

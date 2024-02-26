@@ -1,0 +1,89 @@
+@font-face {
+    font-family: aptos-black-italic;
+    src: url(../../fonts/aptos/aptos-black-italic.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-black;
+    src: url(../../fonts/aptos/aptos-black.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-bold;
+    src: url(../../fonts/aptos/aptos-bold.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-extrabold-italic;
+    src: url(../../fonts/aptos/aptos-extrabold-italic.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-extrabold;
+    src: url(../../fonts/aptos/aptos-extrabold.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-italic;
+    src: url(../../fonts/aptos/aptositalic.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-light-italic;
+    src: url(../../fonts/aptos/aptos-light-italic.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-light;
+    src: url(../../fonts/aptos/aptos-light.ttf);
+  }
+
+  @font-face {
+    font-family: aptos-semibold;
+    src: url(../../fonts/aptos/aptos-semibold.ttf);
+  }
+
+  @font-face {
+    font-family: aptos;
+    src: url(../../fonts/aptos/aptos.ttf);
+  }
+
+
+:root {
+    --a1exprod-morron: #80142B;
+    --a1exprod-cyan: #00A19C;
+    --cv-darkblue: #07B2D9;
+    --cv-lightblue: #88DFF2;
+    --unclean-white: #FAFAFA;
+
+    /*color: var(--name);*/
+}
+
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.Cw{
+  color:white;
+  }
+  .Cb{
+  color:black;
+  }
+
+
+  
+
+  
+  
+  
+
+  

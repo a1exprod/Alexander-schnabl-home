@@ -1,0 +1,69 @@
+@import url('technical/standardclasses.css');
+
+
+@media only screen and (min-width: 1700px) {
+
+    .screen-format {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+
+.bgc1{ /*Main Boxes Background color*/
+background-color:var(--cv-darkblue);
+border-radius: 3rem;
+
+}
+.bgc2{ /*contras box background color to blue*/
+background-color:white;
+}
+
+
+
+
+
+/**Gallery*******************************************************************/
+.gallery-link{
+    font-size:1.5rem;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    transition: 0.3s;
+}
+.gallery-link:hover{
+    background-color:rgba(255,255,255);
+    color:rgb(0,53,97);
+    transition: 0.3s;
+    outline:2px solid rgb(0,53,97);
+    outline-offset: -5px;
+}
+img.gallery {
+    box-shadow: 10px 10px #A3D2FF;
+   
+
+    
+}
+
+img.gallery:hover {
+    box-shadow: 30px 10px #265780;
+    opacity: 1;
+}
+
+
+
+
+
+
+/*FOOTER******************************************************************/
+
+footer{
+    border-top: 1px solid var(--a1exprod-cyan);
+    color: var(--cv-lightblue);
+}
+
+
+
+
+
+    

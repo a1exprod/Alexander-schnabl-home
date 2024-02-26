@@ -1,0 +1,24 @@
+/**
+Style here the basic version of the mainly used text-orientated tags
+**/
+
+@import url('technical/standardclasses.css');
+
+
+/**TEXT TAGS*******************************************************************/
+h1,h2{
+    font-family: aptos-black; 
+    text-transform: uppercase;
+    margin-bottom: 3rem; 
+}
+
+h3,h4,h5,h6 {
+    font-family: aptos-bold;  
+}
+
+p {
+    font-family: aptos;
+}
+
+/**Specific text*******************************************************************/
+

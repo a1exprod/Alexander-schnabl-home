@@ -3,7 +3,7 @@ This file containes the styling of the Navigation menu
 Logo images are handled here also
 **/
 
-@import url('var-fonts.css');
+@import url('standardclasses.css');
 
 
 
@@ -15,11 +15,17 @@ a:hover{
     color:var(--a1exprod-morron);
 }
 
-mark{
-    background-color:#96bcff;
+/**Project Previews**************************************************************************/
+h2.project-preview,h3.project-preview {
+    text-decoration: none;
+    color: black;
+    font-family: aptos-bold;
 }
 
-
+h3.project-preview {
+    font-family: aptos-light;
+    margin-top: -3rem;
+}
 
 
 .nav{
@@ -67,7 +73,6 @@ transition: 0.1s;
     font-family: aptos;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid var(--a1exprod-cyan);
-    position:fixed;
     top:0;
     align-items: center;
     justify-content: space-between;

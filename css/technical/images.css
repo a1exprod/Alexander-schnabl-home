@@ -1,13 +1,10 @@
 /**
 This file containes responsive image handling for the wohle website.
 Logos are not contained.
-
-
-
 **/
 
 
-@import url('var-fonts.css');
+@import url('standardclasses.css');
 
 img.aboutme {
     height: 50rem;
@@ -25,25 +22,20 @@ img.cv {
     height: 10%;
 }
 
+img#diploma-bigpicture {
+    width: 100%;
+}
 
+img.preview-projects {
+    width: 100%;
+    border-radius: 1rem;
+}
 
 
 
 /*RESPONSIVE***************************************************************/
 @media(max-width:750px){
-    .nav{
-        background-color:rgba(0,53,97,0.7);
-        backdrop-filter:blur(0.75em);
-    }
-    .header{
-        backdrop-filter: none;
-        
-    }
-    .active{
-        padding-right:10px;
-        border-top:none;
-        border-right:5px solid white;
-    }
+
     
 }
 /* Larger than tablet */

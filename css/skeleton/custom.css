@@ -223,9 +223,7 @@ margin-right:33.33%;
     transform: scale(3.25);
 }
 /**List-Elements**/
-li{
-    width:fit-content;
-}
+
 ul{
     margin-left:8rem;
     margin-right:8rem;

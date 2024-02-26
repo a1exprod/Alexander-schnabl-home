@@ -64,6 +64,46 @@ footer{
 
 
 
+ /**Formular**/
+  
+  button,input[type=submit] {
+    background-color: var(--cv-lightblue);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+button {
+    color: var(--unclean-black);
+    border: 0;
+    color: var(--grey);
+}
+button:hover {
+    border: 0;
+}
+button,input[type=submit].vertical {
+    /**USE ONLY ON THE BUTTON BELOW**/
+    background-color: var(--cv-lightblue);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-top: -2rem;
+  }
+button:hover,input[type=submit]:hover {
+    color: var(--a1exprod-morron)
+}
+  
+ 
+  
+
 
 
     

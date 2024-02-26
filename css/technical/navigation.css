@@ -130,27 +130,6 @@ nav span{
 .cornerborder{
     outline: 8px solid white;
 }
-/**Formular**/
-input[type=text], input[type=email], input[type=tel], textarea {
-    border: 1px solid #A3D2FF;
-}
-input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, textarea:hover {
-    border: 2px solid #0091FF;
-}
-
-input[type=text], input[type=email], input[type=tel] {
-    border-radius: 4px;
-  }
-  
-  input[type=submit] {
-    background-color: #265780;
-    color: white;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #003561;
-    color: white;
-  }
   /**InfoSection**/
 
   .infocard:hover{

@@ -55,9 +55,21 @@
     --cv-darkblue: #07B2D9;
     --cv-lightblue: #88DFF2;
     --unclean-white: #FAFAFA;
+    --grey: #555555;
+    --unclean-black: #222222;
 
     /*color: var(--name);*/
 }
+
+
+
+.space {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 .left {
@@ -72,12 +84,15 @@
   text-align: right;
 }
 
+
+
 .Cw{
   color:white;
   }
-  .Cb{
+
+.Cb{
   color:black;
-  }
+}
 
 
   

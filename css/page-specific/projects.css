@@ -40,3 +40,33 @@ a.project {
     padding-right: 5rem;
 }
 
+img.project-uiux {
+    width: 90%;
+    height: 90%;
+}
+
+
+/*RESPONSIVE***************************************************************/
+@media(max-width:750px){
+    img.project-uiux {
+        width: 90%;
+        height: 90%;
+        display: none;
+    }
+
+}
+    
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    p.contact {
+        font-size: 1.5rem;
+    }
+}
+    
+    
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+}
+

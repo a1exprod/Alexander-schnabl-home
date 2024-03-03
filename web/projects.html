@@ -31,24 +31,28 @@
 
     <body>
 <!--HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
-        <header class="header flex">
-            <div>
-                <img 
-                    src="../icons/logo.png" alt="LogoImage" onclick="loadlandingpage()" class="logo" id="logo"
-                    style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
-            </div>
-            <div>
-                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="false"></button>
-                <nav>
-                    <ul id="nav" data-visible="false" class="nav flex">
-                        <li><a class="navlink" href="../index.html">Home</a></li>
-                        <li><a class="navlink" href="resume.html">Resume</a></li>
-                        <li><a class="navlink" href="aboutme.html">About me</a></li>
-                        <li><a class="active navlink">Projects</a></li>
+<header class="header flex">
+    <div>
+        <img src="../icons/logo.png" alt="LogoImage" onclick="loadlandingpage()" class="logo" id="logo" style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;">
+    </div>
+    <div>
+        <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="false"></button>
+        <nav>
+            <ul id="nav" data-visible="false" class="nav flex">
+                <li><a class="navlink" href="../index.html">Home</a></li>
+                <li><a class="navlink" href="resume.html">Resume</a></li>
+                <li><a class="navlink" href="aboutme.html">About me</a></li>
+                <li class="nav-parent"><a class="active navlink">Projects</a>
+                    <ul class="subnav">
+                        <li><a class="navlink" href="illustration.html">Illustration</a></li>
+                        <li><a class="navlink" href="homepage-creation.html">Homepage Creation</a></li>
+                        <li><a class="navlink" href="diploma-thesis.html">Diploma Thesis</a></li>
                     </ul>
-                </nav>
-            </div>
-        </header>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <!--END OF: HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
         <div class="spacer screen-format">
 
@@ -224,7 +228,7 @@
                 </div><!--<div class="container fit nopad">-->
 
                 <!--UIUIX Project-->
-                <div id="project-jv" class="container fit nopad">
+                <div id="project-uiux" class="container fit nopad">
                     <div class="decoline thirdmarginLR fullXleft" style="background-color:rgb(128, 20, 43);height:6px;"></div>
                     
                     <h1>Usability / UX</h1>
@@ -275,48 +279,10 @@
                                             <p class="question">The assignment</p>
                                             <p class="text">
                                                 The assignment was to deploy a wireframe and mockup about a sportwatch including two or more functions. 
-                                                Keyfocus has to be a simple realisation, which allows user to simple understand and use that device.
+                                                Keyfocus has to be a simple realisation, which allows user to simple understand and use that device. 
+                                                Its also to concider that attributes like weight size, traget-group, button-order, etc. can be a huge inpact into the user expirience.
                                             </p>
                                         </div>
-                                        <div class="row">
-                                            <div class="center twelve columns">
-                                                <p class="question">My realization</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="center four columns">
-                                                <h3 class="left">Step 1:</h3>
-                                                <h5 class="left">Create mindmap and define which requirements should be considered</h5>
-                                                <ul class="left">
-                                                    <li>unit system</li>
-                                                    <li title="battery or charger?">powersupply work</li>
-                                                    <li>maximum weight</li>
-                                                    <li title="UX concerning">Define targetgroup</li>
-                                                    <li title="UX concerning">Define which kind of sport should be considered</li>
-                                                    <li>dimension of the actual watch</li>
-                                                    <li>Buttons and functions placement</li>
-                                                    <li>App for smartphone to transfer datas</li>
-                                                </ul>
-                                            </div>
-                                            <div class="center eight columns">
-                                                <h3 class="left">Step 2:</h3>
-                                                <h5 class="left">Define the requirements</h5>
-                                                <table>
-                                                    <tr>
-                                                        <td>usage of metric system</td>
-                                                        <td>The metric system is the most known and common system. The watch will provide kilometer, m and european time format (e.g. 14:32).</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>powersupply</td>
-                                                        <td>Charging. To save weight and space, and even the environment. The user can simpley charge his sportwatch like his smartphone.
-                                                            The type of charger should be USB-c, its a global standard so I can assume that probably every customer has a USB-c charging cable, which 
-                                                            means I can go a bit cheaper, because I dont have to provide a charging cable for the sportwatch.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="row">
                                         <div class="center four columns">
                                             <img class="project-uiux" src="../img/projects/UIUX - Wireframe 1.png" alt="wireframe">

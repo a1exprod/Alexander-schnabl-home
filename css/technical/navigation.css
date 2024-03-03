@@ -174,3 +174,42 @@ nav span{
 @media (min-width: 1200px) {
     
 }
+
+
+.subnav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff; /* Adjust as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow if desired */
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px; /* Add padding as needed */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    right: 0; /* Align with the right side of the parent */
+    opacity: 0; /* Initially hidden */
+    animation: stayVisible 5s 1 forwards; /* 5s + 1s for fade-in and fade-out */
+}
+
+.nav-parent:hover .subnav {
+    display: block;
+    opacity: 1; /* Make visible on hover */
+}
+
+.nav-parent:hover {
+    animation: stayVisible 5s 1 forwards; /* 5s + 1s for fade-in and fade-out */
+}
+
+
+@keyframes stayVisible {
+    0%, 100% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+

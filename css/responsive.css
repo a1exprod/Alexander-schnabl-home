@@ -9,15 +9,30 @@
 
 @media only screen and (max-width: 1199px) {
     /* Add your laptop styles here */
+    img.infico {
+        width: 10rem;
+        height: 10rem;
+    }
 }/*END OF: laptop******************************************************************************/
   
 
 @media only screen and (max-width: 991px) {
     /* Add your tablet styles here */
+    img.infico {
+        width: 10rem;
+        height: 10rem;
+    }
 }/*END OF: tablet******************************************************************************/
   
 
 @media only screen and (max-width: 767px) {
     /* Add your smartphone styles here */
+    li.mediatechnology {
+        display: none;
+    }
+
+    h3.mediatechnology {
+        margin-top: 0.2rem;
+    }
 }/*END OF: Smartphone******************************************************************************/
   

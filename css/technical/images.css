@@ -22,7 +22,7 @@ img#diploma-bigpicture {
 }
 
 img.preview-projects {
-    width: 100%;
+    width: 85%;
     border-radius: 1rem;
 }
 
@@ -43,20 +43,37 @@ img#cv-portrait {
 
 
 
-/*RESPONSIVE***************************************************************/
-@media(max-width:750px){
-    img#cv-portrait {
-        display: none;
-    }
-    
-}
-/* Larger than tablet */
-@media (min-width: 750px) {
 
-}
-    
-    
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-    
-}
+
+
+@media only screen and (min-width: 1200px) {
+    /* Add your desktop styles here */
+}/*END OF: Desktop******************************************************************************/
+
+
+@media only screen and (max-width: 1199px) {
+    /* Add your laptop styles here */
+    img.preview-projects {
+        width: 75%;
+    }
+}/*END OF: laptop******************************************************************************/
+  
+
+@media only screen and (max-width: 991px) {
+    /* Add your tablet styles here */
+    img.preview-projects {
+        width: 75%;
+    }
+}/*END OF: tablet******************************************************************************/
+  
+
+@media only screen and (max-width: 767px) {
+    /* Add your smartphone styles here */
+    img#cv-portrait {
+        width: 50%;
+    }
+
+    img.preview-projects {
+        width: 75%;
+    }
+}/*END OF: Smartphone******************************************************************************/

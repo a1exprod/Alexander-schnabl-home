@@ -373,15 +373,18 @@ h6{font-size: 0.8rem;}
 
 .nav{
     position:fixed;
-    inset:0 0 0 50%;
-    height:100vh;
+    inset:0 0 0 55%;
+    height:33vh;
     flex-direction: column;
-    gap:4rem;
-    padding:20rem 2rem;
+    gap:1rem;
     transform: translateX(100%);
-    transition: 2s ease-out;
-    border: 1px solid var(--unclean-white);
+    transition: 1s ease-out;
     border-top:none;  
+    text-align: right;
+    box-shadow: 20px 0 20px var(--grey);
+    backdrop-filter: blur(10px);
+    margin-top: 300px;
+    text-transform: uppercase;
 }
 .header{
     border:hidden;

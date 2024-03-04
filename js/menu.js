@@ -16,17 +16,17 @@ function navbartoggling(){
         if(checkvisible==="false"){
             navigation.setAttribute("data-visible",true);
             navToggle.setAttribute("aria-expanded",true);
-            navToggle.style.backgroundColor="transparent";
-            navigation.style.transition="transform 350ms ease-out";
+            navToggle.style.backgroundColor="rgb(0, 161, 156)";
+            navigation.style.transition="transform 100ms ease-out";
             
         }
         else{
             navigation.setAttribute("data-visible",false);
             navToggle.setAttribute("aria-expanded",false);
-            navToggle.style.backgroundColor="rgba(0,53,97,0.9)";
+            navToggle.style.backgroundColor="rgb(0, 161, 156)";
             navToggle.style.padding.left="10px";
-            header.style.transition="0.3s";
-            header.style.backgroundColor="rgba(0,53,97,0.9)";
+            header.style.transition="0.1s";
+            header.style.backgroundColor="rgba(250,250,250,1)";
         }
     });
 }

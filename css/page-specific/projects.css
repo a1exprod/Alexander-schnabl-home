@@ -5,33 +5,43 @@ Additional specific styling for subpages ONLY
 @import url('../technical/standardclasses.css');
 
 h1.projects{
-    text-align: center;
     color: var(--unclean-white);
     font-family: aptos-extrabold;
-    
+    margin: 0;
+    padding-left: 4rem;
+    color: black;
 }
 
 h2.projects {
-    text-align: center;
-    color: var(--unclean-white);
+    color: black;
     font-family: aptos-light;
+    margin: 0;
+    padding-left: 4rem;
 }
 
 
 
 p.question {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: aptos-black;
     text-align: left;
-    padding-left: 2rem;
+    margin: 0;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 p.text {
     text-align: left;
+    padding-left: 2rem;
 }
 
 a.project {
     font-family: aptos;
+    font-size: 2rem;
+}
+
+p.link {
+    font-family: aptos-black;
     font-size: 2rem;
 }
 
@@ -40,18 +50,75 @@ a.project {
     padding-right: 5rem;
 }
 
-img.project-uiux {
+img.project-uiux,img.project-uiux-main {
     width: 90%;
     height: 90%;
 }
 
 
+img.project-picjar {
+    width: auto;
+    max-height: 20rem;
+}
+
+td.projects,th.projects,table.projects {
+    text-align: left;
+    border-collapse: collapse;
+    width: 75%; /* Adjust the width as needed */
+    margin-left: 3rem;
+}
+th.projects {
+    font-family: aptos-light;
+    font-size: 2.5rem;
+}
+td.projects {
+    font-family: aptos;
+    color: black;
+}
+#picjar-logo {
+    display: block;
+    height: 10rem;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+img.discover-projects {
+    height: 30rem;
+    width: auto; /* Ensures the image maintains its aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the container horizontally on the page if needed */
+}
+
+
+.discover-popup:hover {
+    transform:scale(1.1);
+    transition: 0.3s;
+}
+
+p.hyperlink {
+    text-align: center;
+    font-family: aptos-black;
+    font-size: 3rem;
+}
+
+
+
+
+
 /*RESPONSIVE***************************************************************/
 @media(max-width:750px){
-    img.project-uiux {
-        width: 90%;
-        height: 90%;
+    img.project-uiux-main {
         display: none;
+    }
+
+    img.project-uiux {
+        width: 66%;
+    }
+
+    img.discover-projects {
+        height: 20rem;
     }
 
 }
@@ -61,6 +128,10 @@ img.project-uiux {
 @media (min-width: 750px) {
     p.contact {
         font-size: 1.5rem;
+    }
+
+    img.discover-projects {
+        height: 15rem;
     }
 }
     

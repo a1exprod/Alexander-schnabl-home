@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Projects</title>
+    <link rel="icon" type="image/png" href="../favicon/logo.png">
+
+    <link rel="stylesheet" href="../css/skeleton/normalize.css">
+	<link rel="stylesheet" href="../css/skeleton/skeleton.css">
+	<link rel="stylesheet" href="../css/skeleton/custom.css">
+
+    <link rel="stylesheet" href="../css/technical/images.css">
+    <link rel="stylesheet" href="../css/technical/navigation.css">
+    <link rel="stylesheet" href="../css/technical/standardclasses.css">
         
-        <title>AS Homepage</title>
-        <link rel="icon" type="image/png" href="../favicon/logo.png">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 
-        <link rel="stylesheet" href="../css/skeleton/normalize.css">
-        <link rel="stylesheet" href="../css/skeleton/skeleton.css">
-        <link rel="stylesheet" href="../css/skeleton/custom.css">
+    <link rel="stylesheet" href="../css/page-specific/projects.css">
+		
+    <script src="../js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="../js/landingpage.js"></script>
+    <script src="../js/menu.js"></script>
+	<script src="../js/gallery.js"></script>
+</head>
 
-        <link rel="stylesheet" href="../css/technical/images.css">
-        <link rel="stylesheet" href="../css/technical/navigation.css">
-        <link rel="stylesheet" href="../css/technical/standardclasses.css">
+<body>
+    <header class="header flex">
+        <div>
+            <img 
+                src="../icons/logo.png" alt="LogoImage" class="logo" id="logo" onclick="loadlandingpage()" 
+                style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
+        </div>
+        <div>
             
-        <link rel="stylesheet" href="../css/theme.css">
-        <link rel="stylesheet" href="../css/text.css">
 
-        <link rel="stylesheet" href="../css/page-specific/projects.css">
-            
-        <script src="../js/jquery-3.6.1.min.js" type="text/javascript"></script>
-        <script src="../js/landingpage.js"></script>
-        <script src="../js/menu.js"></script>
-        <script src="../js/gallery.js"></script>
-    </head>
+            <nav>
+                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="true">
+                </button>
+                <ul id="nav" class="nav flex">
+                    <li><a class="navlink" href="../index.html">Home</a></li>
+                    <li><a class="navlink" href="resume.html">Timeline</a></li>
+                    <li><a class="navlink" href="aboutme.html">About me</a></li>
+                    <li><a class="active navlink">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
-
-    <body>
-<!--HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
-<header class="header flex">
-    <div>
-        <img src="../icons/logo.png" alt="LogoImage" onclick="loadlandingpage()" class="logo" id="logo" style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;">
-    </div>
-    <div>
-        <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="false"></button>
-        <nav>
-            <ul id="nav" data-visible="false" class="nav flex">
-                <li><a class="navlink" href="../index.html">Home</a></li>
-                <li><a class="navlink" href="resume.html">Resume</a></li>
-                <li><a class="navlink" href="aboutme.html">About me</a></li>
-                <li class="nav-parent"><a class="active navlink">Projects</a>
-                    <ul class="subnav">
-                        <li><a class="navlink" href="illustration.html">Illustration</a></li>
-                        <li><a class="navlink" href="homepage-creation.html">Homepage Creation</a></li>
-                        <li><a class="navlink" href="diploma-thesis.html">Diploma Thesis</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<!--END OF: HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
+<!--****************************************************************************************************************************************************************-->
         <div class="spacer screen-format">
 
             <div class="row">
@@ -62,14 +62,9 @@
                         <input type="submit" value="My Diploma Thesis" ></input>
                     </form>
                 </div>
-                <div class="center six columns">
-                    <form action="projects/homepage-creation.html" target="_blank" method="get">
-                        <input type="submit" value="In the making of this homepage"></input>
-                    </form>
-                </div>
                 <div class="center three columns">
                     <form action="projects/illustration.html" target="_blank" method="get">
-                        <input type="submit" value="Illustrations"></input>
+                        <input type="submit" value="Creative Design"></input>
                     </form>
                 </div>
             </div>
@@ -467,28 +462,31 @@
                 </div><!--<div class="row">-->
 
                 <div class="decoline thirdmarginLR fullXright" style="background-color:rgb(128, 20, 43);height:6px;margin-bottom: 16rem"></div>
+
+    <!--****************************************************************************************************************************************************************-->
+</div><!--END OF SCREEN FORMAT-->
+    
+
+<div class="container fit">
+    <footer>
+    <div class="row">
+        <div class="center twelve columns">
+            <a class="footer-link" href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
+            <span> | </span> 
+            <a class="footer-link" href="https://github.com/a1exprod" target="_blank">GitHub</a>
+            <br>
+            <form action="impressum.html" target="_blank" method="get">
+                <input type="submit" value="disclosure obligation"></input>
+            </form>
         </div>
-<!--FOOTER SECTION----------------------------------------------------------------------------------------------------------------->
-        <div class="container fit">
-            <footer>
-                <div class="row">
-                    <div class="center twelve columns">
-                        <a href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
-                        <span> | </span> 
-                        <a href="https://github.com/a1exprod" target="_blank">GitHub</a>
-                        <br>
-                        <form action="impressum.html" method="get">
-                            <input type="submit" value="disclosure obligation"></input>
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="center twelve columns">
-                        <span id="website-creator">2024 - Website creator: Alexander Schnabl</span>
-                    </div>
-                </div>
-            </footer>
+    </div>
+    <div class="row">
+        <div class="center twelve columns">
+            <span id="website-creator">2024 - Website creator: Alexander Schnabl</span>
         </div>
-<!--END OF: FOOTER SECTION----------------------------------------------------------------------------------------------------------------->
-    </body>
+    </div>
+</footer>
+
+</div>
+</body>
 </html>

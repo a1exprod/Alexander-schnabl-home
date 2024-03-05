@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>AS Homepage</title>
+    <title>Projects</title>
     <link rel="icon" type="image/png" href="../favicon/logo.png">
 
     <link rel="stylesheet" href="../css/skeleton/normalize.css">
@@ -18,6 +18,9 @@
         
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="../css/page-specific/resume.css">
 		
     <script src="../js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="../js/landingpage.js"></script>
@@ -25,139 +28,202 @@
 	<script src="../js/gallery.js"></script>
 </head>
 
+<body>
+    <header class="header flex">
+        <div>
+            <img 
+                src="../icons/logo.png" alt="LogoImage" class="logo" id="logo" onclick="loadlandingpage()" 
+                style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
+        </div>
+        <div>
+            
+
+            <nav>
+                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="true">
+                </button>
+                <ul id="nav" class="nav flex">
+                    <li><a class="navlink" href="../index.html">Home</a></li>
+                    <li><a class="active navlink">Timeline</a></li>
+                    <li><a class="navlink" href="aboutme.html">About me</a></li>
+                    <li><a class="navlink" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="screen-format">
+
+<!--****************************************************************************************************************************************************************-->
+<div class="spacer"></div>
+<div class="decoline thirdmarginLR fullXleft" style="background-color:rgb(128, 20, 43);height:6px;"></div>
+<!--<h1>Me, myself and I</h1>-->
+<h1>My journey so far</h1>            
 
 
-    <body>
-<!--HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
-        <header class="header flex">
-            <div>
-                <img 
-                    src="../icons/logo.png" alt="LogoImage" onclick="loadlandingpage()" class="logo" id="logo"
-                    style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
-            </div>
-            <div>
-                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="false"></button>
-                <nav>
-                    <ul id="nav" data-visible="false" class="nav flex">
-                        <li><a class="navlink" href="../index.html">Home</a></li>
-                        <li><a class="active navlink">Resume</a></li>
-                        <li><a class="navlink" href="aboutme.html">About me</a></li>
-                        <li><a class="navlink" href="projects.html">Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-<!--END OF: HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
-        <div class="screen-format">
+            <div class="row">
+                <div class="twelve columns">
+                    <!--This is the main container that contains the whole timeline.-->
+                    <section class="design-section">
+                        <div class="timeline">
+                            
+                            <div class="timeline-empty">
+                            </div>
 
 
-            <header>
-                <h1>Responsive Vertical Timeline</h1>
-            </header>
+
+
+
+
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
+                            <div class=" timeline-component timeline-content">
+                                <p class="date">Jul 2023 - Jan 2024</p>
+                                <h3 class="timeline">Austrian Armed Forces</h3>
+                                <h4 class="genre">Military Service</h4>
+                            </div>
+                            
+       
+                            <div class="right timeline-component timeline-content">
+                                <p class="date">Jul 2021</p>
+                                <h3 class="timeline">JV-Design</h3>
+                                <h4 class="genre">Internship</h4>
+                                <div class="border border-right"></div>
+                                <ul class="right">
+                                    <li class="timeline">Web development</li>
+                                    <li class="timeline">CMS (Wordpress with Elementor)</li>
+                                    <li class="timeline">Coordination and execution of a photoshoot</li>
+                                    <li class="timeline">Post production of images</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
+                            <div class="timeline-empty">
+                            </div>
         
-            <section id="cd-timeline" class="cd-container">
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img cd-picture">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
-                    </div> <!-- cd-timeline-img -->
-        
-                    <div class="cd-timeline-content">
-                        <h2>Title of section 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Jan 14</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-        
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img cd-movie">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-                    </div> <!-- cd-timeline-img -->
-        
-                    <div class="cd-timeline-content">
-                        <h2>Title of section 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Jan 18</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-        
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img cd-picture">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
-                    </div> <!-- cd-timeline-img -->
-        
-                    <div class="cd-timeline-content">
-                        <h2>Title of section 3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Jan 24</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-        
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img cd-location">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-                    </div> <!-- cd-timeline-img -->
-        
-                    <div class="cd-timeline-content">
-                        <h2>Title of section 4</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Feb 14</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-        
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img cd-location">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-                    </div> <!-- cd-timeline-img -->
-        
-                    <div class="cd-timeline-content">
-                        <h2>Title of section 5</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-                        <a href="#0" class="cd-read-more">Read more</a>
-                        <span class="cd-date">Feb 18</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-        
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img cd-movie">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-                    </div> <!-- cd-timeline-img -->
-        
-                    <div class="cd-timeline-content">
-                        <h2>Final Section</h2>
-                        <p>This is the content of the last section</p>
-                        <span class="cd-date">Feb 26</span>
-                    </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-            </section> <!-- cd-timeline -->
+                            <div class="timeline-empty">
+                            </div>
+
+
+                            
+
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                
+                        <div class="timeline-component timeline-content">
+                            <p class="date">Sep 2018 - Jun 2023</p>
+                            <h3 title="Higher Federal Technical College of Information Technology" class="timeline">IT-HTL Ybbs</h3>
+                            <h4 class="genre">Education</h4>
+                            <p class="certification">Diploma Thesis <br> School leaving Certificate</p>
+                            <div class="center border"></div>
+                                <ul class="left">
+                                    <li class="timeline">Media design/technology</li>
+                                    <li class="timeline">Web design/development</li>
+                                    <li class="timeline">Software development</li>
+                                    <li class="timeline">Content management systems</li>
+                                    <li class="timeline">Mobile application</li>
+                                    <li class="timeline">3D-modelling</li>
+                                    <li class="timeline">Project management</li>
+                                    <li class="timeline">Advertising psychology</li>
+                                </ul>
+                        </div>
+                        <div class="right timeline-component timeline-content">
+                            <p class="date">Aug 2018</p>
+                            <h3 title="University of Applied Science St.Pölten" class="timeline">FH St.Pölten Young Campus Photography</h3>
+                            <h4 class="genre">Workshop</h4>
+                            <div class="border border-right"></div>
+                            <ul class="right">
+                                <li class="timeline">Photography of portrait images in studio settings</li>
+                                <li class="timeline">post-production of images</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-empty">
+                        </div>
+    
+                        <div class="timeline-empty">
+                        </div>
+    
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class=" timeline-component timeline-content">
+                        <p class="date">Jun 2017</p>
+                        <h3 class="timeline">Sterngasse Brand</h3>
+                        <h4 class="genre">Internship</h4>
+                        <div class="border"></div>
+                                <ul class="left ">
+                                    <li class="timeline">Logo design</li>
+                                    <li class="timeline">Web design</li>
+                                </ul>
+                    </div>
+
+                    <div class="right timeline-component timeline-content">
+                        <p class="date">Sep 2014 - Jun 2018</p>
+                        <h3 title="secondary school" class="timeline">NMS Melk</h3>
+                        <h4 class="genre">Education</h4>
+                        <p class="certification">Cambridge KET-Certificate</p>
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class=" timeline-component timeline-content">
+                        <p class="date">Sep. 2009 - Jun. 2014</p>
+                        <h3 title="elementary school" class="timeline">VS Melk</h3>
+                        <h4 class="genre">Education</h4>
+                    </div>
+    
+                </div>
+            </div> 
+                </section>
+
+                </div><!--<div class="center six columns">-->
+            </div><!--<div class="row">-->
+
+
+                                      
             
 
 
+    <!--****************************************************************************************************************************************************************-->
+</div><!--END OF SCREEN FORMAT-->
+    
+
+<div class="container fit">
+    <footer>
+    <div class="row">
+        <div class="center twelve columns">
+            <a class="footer-link" href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
+            <span> | </span> 
+            <a class="footer-link" href="https://github.com/a1exprod" target="_blank">GitHub</a>
+            <br>
+            <form action="impressum.html" target="_blank" method="get">
+                <input type="submit" value="disclosure obligation"></input>
+            </form>
         </div>
-<!--FOOTER SECTION----------------------------------------------------------------------------------------------------------------->
-        <div class="container fit">
-            <footer>
-                <div class="row">
-                    <div class="center twelve columns">
-                        <a href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
-                        <span> | </span> 
-                        <a href="https://github.com/a1exprod" target="_blank">GitHub</a>
-                        <br>
-                        <button class="gallery-link" onclick="">disclosure obligation</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="center twelve columns">
-                        <span>2024 - Website creator: Alexander Schnabl</span>
-                    </div>
-                </div>
-            </footer>
+    </div>
+    <div class="row">
+        <div class="center twelve columns">
+            <span id="website-creator">2024 - Website creator: Alexander Schnabl</span>
         </div>
-<!--END OF: FOOTER SECTION----------------------------------------------------------------------------------------------------------------->
-    </body>
+    </div>
+</footer>
+
+</div>
+</body>
 </html>
 
 

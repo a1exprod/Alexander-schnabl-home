@@ -49,6 +49,11 @@ a:hover{
     z-index: 9999;
 }
 
+.active{
+    padding-top:20px;
+    padding-bottom:10px;
+    border-top: 10px solid var(--a1exprod-morron);
+}
 
 /**Smartphone**/
 .mobile-navtoggle{
@@ -113,6 +118,7 @@ a:hover{
     a.active {
         color: var(--a1exprod-morron);
         font-family: aptos;
+        border-top: 0;
     }
 }/*END OF: Smartphone******************************************************************************/
  

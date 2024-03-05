@@ -18,6 +18,7 @@
         
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 		
     <script src="../js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="../js/landingpage.js"></script>
@@ -25,30 +26,33 @@
 	<script src="../js/gallery.js"></script>
 </head>
 
+<body>
+    <header class="header flex">
+        <div>
+            <img 
+                src="../icons/logo.png" alt="LogoImage" class="logo" id="logo" onclick="loadlandingpage()" 
+                style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
+        </div>
+        <div>
+            
 
+            <nav>
+                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="true">
+                </button>
+                <ul id="nav" class="nav flex">
+                    <li><a class="navlink" href="../index.html">Home</a></li>
+                    <li><a class="navlink" href="resume.html">Timeline</a></li>
+                    <li><a class="active navlink">About me</a></li>
+                    <li><a class="navlink" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <body>
-<!--HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
-        <header class="header flex">
-            <div>
-                <img 
-                    src="../icons/logo.png" alt="LogoImage" onclick="loadlandingpage()" class="logo" id="logo"
-                    style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
-            </div>
-            <div>
-                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="false"></button>
-                <nav>
-                    <ul id="nav" data-visible="false" class="nav flex">
-                        <li><a class="navlink" href="../index.html">Home</a></li>
-                        <li><a class="navlink" href="resume.html">Resume</a></li>
-                        <li><a class="active navlink">About me</a></li>
-                        <li><a class="navlink" href="projects.html">Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-<!--END OF: HEADER and NAV SECTION----------------------------------------------------------------------------------------------------------------->
-        <div class="screen-format">
+    <div class="screen-format">
+
+<!--****************************************************************************************************************************************************************-->
 
 
             <div class="container fit nopad">
@@ -185,29 +189,30 @@
             
 
 
-        </div>
+    <!--****************************************************************************************************************************************************************-->
+</div><!--END OF SCREEN FORMAT-->
+    
 
-<!--FOOTER SECTION----------------------------------------------------------------------------------------------------------------->
 <div class="container fit">
     <footer>
-        <div class="row">
-            <div class="center twelve columns">
-                <a href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
-                <span> | </span> 
-                <a href="https://github.com/a1exprod" target="_blank">GitHub</a>
-                <br>
-                <form action="impressum.html" method="get">
-                    <input type="submit" value="disclosure obligation"></input>
-                </form>
-            </div>
+    <div class="row">
+        <div class="center twelve columns">
+            <a class="footer-link" href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
+            <span> | </span> 
+            <a class="footer-link" href="https://github.com/a1exprod" target="_blank">GitHub</a>
+            <br>
+            <form action="impressum.html" target="_blank" method="get">
+                <input type="submit" value="disclosure obligation"></input>
+            </form>
         </div>
-        <div class="row">
-            <div class="center twelve columns">
-                <span id="website-creator">2024 - Website creator: Alexander Schnabl</span>
-            </div>
+    </div>
+    <div class="row">
+        <div class="center twelve columns">
+            <span id="website-creator">2024 - Website creator: Alexander Schnabl</span>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </div>
-<!--END OF: FOOTER SECTION----------------------------------------------------------------------------------------------------------------->
-    </body>
+</body>
 </html>

@@ -30,6 +30,17 @@ background-color:rgba(250, 250, 250, 0.7);
     background-color:white;
 }
 
+q {
+    font-size: 5rem;
+    font-family: aptos-light-italic;
+    text-transform: capitalize;
+    margin: 2rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: var(--a1exprod-cyan);
+}
+
 
 /**Gallery*******************************************************************/
 .gallery-link{
@@ -112,16 +123,100 @@ button:hover,input[type=submit]:hover {
 }
 
 
-input[type=submit], #contactme {
+input[type=submit]{
     background-color: var(--cv-lightblue);
     border: 1px solid var(--unclean-black);
     font-size: 1.3rem;
     color: var(--unclean-black);
 }
+
+
+
+
+#contactme {
+    border-radius: 5px;
+    background-color: var(--cv-lightblue);
+    border: 1px solid var(--unclean-black);
+    color: var(--unclean-black);
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 2rem;
+    width: 75%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#contactme span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#contactme span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #contactme:hover span {
+    padding-right: 25px;
+  }
   
+#contactme:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
  
+.note {
+    text-decoration: none;
+    font-family: aptos-light-italic;
+    color: black;
+}
+
+.version {
+    padding-right: 10%;
+    text-align: right;
+}
+#big-special-character {
+    font-size: 30px;
+    justify-content: baseline;
+}
+  
+  @media only screen and (min-width: 1200px) {
+    /* Add your desktop styles here */
+}/*END OF: Desktop******************************************************************************/
+
+
+@media only screen and (max-width: 1199px) {
+    /* Add your laptop styles here */
+    #contactme {
+        width: 75%;
+    }
+}/*END OF: laptop******************************************************************************/
   
 
+@media only screen and (max-width: 991px) {
+    /* Add your tablet styles here */
+
+    #contactme {
+        width: 100%;
+    }
+}/*END OF: tablet******************************************************************************/
+  
+
+@media only screen and (max-width: 767px) {
+    /* Add your smartphone styles here */
+    .version {
+        padding-right: 0;
+        text-align: center;
+    }
+
+
+}/*END OF: Smartphone******************************************************************************/
+  
 
 
     

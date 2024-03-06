@@ -105,7 +105,10 @@ p.hyperlink {
 
 
 
-
+p#padding-left {
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
 
 /*RESPONSIVE***************************************************************/
 @media(max-width:750px){

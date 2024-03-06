@@ -218,16 +218,27 @@
                     </div>
                     <div class="row">
 
-                        <div class="center six columns">
-                            <form action="web/projects/projects.html" method="get">
+                        <div class="center four columns">
+                            <form action="web/projects.html" method="get">
                                 <input type="submit" value="Discover more projects"></input>
                             </form>
                         </div>
-                        <div class="center six columns">
+                        <div class="center four columns">
+                            <form action="web/projects/diploma-thesis.html" method="get">
+                                <input type="submit" value="Discover my Diploma Thesis"></input>
+                            </form>
+                        </div>
+                        <div class="center four columns">
+                            <form action="web/projects/illustration.html" method="get">
+                                <input type="submit" value="Discover my designs"></input>
+                            </form>
+                        </div>
+<!--                        <div class="center six columns">
                             <form action="web/projects/homepage-creation.html" target="_blank" method="get">
                                 <input type="submit" value="About this Homepage" ></input>
                             </form>
                         </div>
+-->
                     </div>
                 </div>
 
@@ -243,12 +254,27 @@
                 
                 <div class="container" style="margin-top:3rem;height:fit-content;overflow-y: hidden;">
                     <div class="row">
-                        <div class="center four columns blur">
+                        <div class="center four columns">
                             <p id="get-in-touch">
                                 If you have any inquiries, questions, or opportunities for collaboration, please don't hesitate to reach out. 
                                 I'm open to discussions and look forward to connecting with you.
                             </p>
-                            <button id="contactme" class="space" mailto="alexander.schnabl@outlook.com" title="via email">Contact me</button>
+                            <button id="contactme" class="space" onclick="openEmailClient()" title="via email">
+                                <span>Contact me </span>
+                            </button>
+                            <span class="note">
+                                <span id="big-special-character">&raquo;</span>
+                                This will open your mail client.</span>
+                            
+                            <script>
+                                function openEmailClient() {
+                                    window.location.href = 'mailto:alexander.schnabl@outlook.com';
+                                }
+                            </script>
+
+                            <div class="spacer"></div>
+                            <div class="spacer"></div>
+                            <div class="spacer"></div>
                         </div>
 
 
@@ -257,11 +283,11 @@
                             <h2>Alexander Schnabl</h2>
                             <div class="decoline halfmarginLR"></div>
 
-                            <form action="projects/resume.html" method="get">
-                                <input type="submit" value="My resume" ></input>
+                            <form action="web/resume.html" method="get">
+                                <input type="submit" value="Timeline" ></input>
                             </form>
 
-                            <form action="projects/aboutme.html" method="get">
+                            <form action="web/aboutme.html" method="get">
                                 <input class="vertical" type="submit" value="About me" ></input>
                             </form>
 

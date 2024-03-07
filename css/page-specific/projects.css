@@ -67,6 +67,12 @@ td.projects,th.projects,table.projects {
     width: 75%; /* Adjust the width as needed */
     margin-left: 3rem;
 }
+
+table.photobooth, th.photobooth {
+    width: auto;
+    border-collapse: collapse;
+}
+
 th.projects {
     font-family: aptos-light;
     font-size: 2.5rem;
@@ -103,11 +109,20 @@ p.hyperlink {
     font-size: 3rem;
 }
 
-
+img.photobooth {
+    width: 75%;
+}
 
 p#padding-left {
     padding-left: 4rem;
     padding-right: 2rem;
+}
+
+img.diplo-img {
+    width: 100%;
+}
+img#diplo-img {
+    width: 50%;
 }
 
 /*RESPONSIVE***************************************************************/

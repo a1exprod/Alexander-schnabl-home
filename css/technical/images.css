@@ -18,8 +18,13 @@ img.cv {
 }
 
 img#diploma-bigpicture {
-    width: 100%;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
+
 
 img.preview-projects {
     width: 85%;

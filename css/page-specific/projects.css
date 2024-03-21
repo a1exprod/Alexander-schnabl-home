@@ -125,6 +125,13 @@ img#diplo-img {
     width: 50%;
 }
 
+iframe {
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /*RESPONSIVE***************************************************************/
 @media(max-width:750px){
     img.project-uiux-main {

@@ -1,0 +1,77 @@
+@import url('../fonts.css');
+@import url('../CICD-Policy.css');
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+.wrapper:not(:last-child) {
+    margin-bottom: 5px; /* Abstand zwischen den Wrappern */
+}
+
+.collapsible {
+    overflow: hidden;
+    width: 100%;
+}
+
+.collapsible input {
+    display: none;
+}
+
+.collapsible label {
+    position: relative;
+    background-color: var(--black-1);
+    display: block;
+    color: black;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+.collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(../../icons/arrow.svg) no-repeat 0 0;
+    transition: all 0.5s ease;
+}
+
+.collapsible input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    margin-bottom: 15px;
+    overflow: hidden;
+    line-height: 1.4;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+    padding-bottom: 25px;
+    background: transparent;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid var(--b-orange);
+    border-right: 1px solid var(--b-orange);
+    border-bottom: 1px solid var(--b-orange);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    opacity: 1;
+    max-height: 1000px; /* sicherstellen, dass der gesamte Inhalt sichtbar ist */
+    margin-top: 5px; /* Abstand zum vorherigen Inhalt */
+}
+
+h4.skills {
+    padding-top: 15px;
+}

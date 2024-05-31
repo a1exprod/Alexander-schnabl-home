@@ -1,0 +1,18 @@
+.js_hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .js_hidden {
+        transition: 0;
+    }
+}
+
+.js_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

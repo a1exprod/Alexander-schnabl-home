@@ -2,394 +2,440 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--MANDANTORY CSS FOR EVERY PAGE-->
+    <link rel="stylesheet" href="css/CICD-Policy.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
     
-    <title>AS Homepage</title>
-    <link rel="icon" type="image/png" href="favicon/logo.png">
+    <link rel="stylesheet" href="css/features/headerNav.css">
+    <link rel="stylesheet" href="css/features/scrollAnimation.css">
+    <link rel="stylesheet" href="css/features/headerMotion.css">
+    <!--Site specific mandantory CSS-->
+    <link rel="stylesheet" href="css/features/timeline.css">
+    <!--MANDANTORY Responsive-->
+    <link rel="stylesheet" href="css/changingContentResponsive.css">
 
-    <link rel="stylesheet" href="css/skeleton/normalize.css">
-	<link rel="stylesheet" href="css/skeleton/skeleton.css">
-	<link rel="stylesheet" href="css/skeleton/custom.css">
 
-    <link rel="stylesheet" href="css/technical/images.css">
-    <link rel="stylesheet" href="css/technical/navigation.css">
-    <link rel="stylesheet" href="css/technical/standardclasses.css">
-        
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/text.css">
-    <link rel="stylesheet" href="css/responsive.css">
-		
-    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
-    <script src="js/landingpage.js"></script>
-    <script src="js/menu.js"></script>
-	<script src="js/gallery.js"></script>
+    
+    <!--MANDANTORY JS FOR EVERY PAGE-->
+    <script defer src="js/ScrollAnimation.js"></script>
+    <script defer src="js/NewTab.js"></script>
+    <script defer src="js/HeaderMotion.js"></script>
+    <!--Site specific mandantory JS-->
+    <script defer src="js/OpenEmailClientFunction.js"></script>
+    <script defer src="js/Timeline.js"></script>
+
+
+    <link rel="icon" href="icons/favicon.png">
+    <title>Alexander Schnabl - Home</title>
 </head>
-
 <body>
-    <header class="header flex">
-        <div>
-            <img 
-                src="icons/logo.png" alt="LogoImage" class="logo" id="logo"
-                style="height:70px;padding-left:2rem; padding-top:1rem; padding-bottom: 1rem;" >
-        </div>
-        <div>
-            
-
+    <header class="home">
+        <div id="head">
+            <input type="checkbox" id="nav_check" hidden>
             <nav>
-                <button class="mobile-navtoggle" aria-controls="nav" aria-expanded="true">
-                </button>
-                <ul id="nav"  class="nav flex">
-                    <li><a class="active navlink">Home</a></li>
-                    <li><a class="navlink" href="web/projects.html">Projects</a></li>
-                    <li><a class="navlink" href="web/resume.html">Timeline</a></li>
-                    <li><a class="navlink" href="web/aboutme.html">About me</a></li>
-                    
+                <ul>
+                    <li>
+                        <a class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="html/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="html/experience.html">Experience</a>
+                    </li>
+                    <li>
+                        <a href="html/vision.html">Vision</a>
+                    </li>
+                    <li>
+                        <a href="html/about.html">About</a>
+                    </li>
                 </ul>
             </nav>
+            <label for="nav_check" class="hamburger">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </label>
         </div>
+        
+        
+        <div id="header-animation"></div>
+        <h1 id="name">Alexander Schnabl<br/>Media Technology</h1>
+
+        <div id="css-resp-smalldevice-title">
+            <h1>Alexander Schnabl<br/><x class="color-cyan">Media Technology</x></h1>
+        </div>
+
     </header>
-
-    <div class="screen-format">
-
-<!--****************************************************************************************************************************************************************-->
-        <div class="container fit nopad">
-           
-
-
-            <div class="row fullw fullh" id="info">
-                
-                <div class="center twelve columns cornerborder fit bgc1" id="infosectionP2">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <h1 class="center">Rebranded Homepage coming soon</h1>
-                        </div>
-                    </div>
-
-      
-                </div>
-            </div>
-        </div>
-
-
-        <div class="decoline thirdmarginLR fullXleft" style="background-color:rgb(128, 20, 43);height:6px;"></div>
-        <!--<h1>Me, myself and I</h1>-->
-        <h1>Let me introduce</h1>
-        <div class="row fullw fullh" id="info">
-                
-            <div class="center twelve columns cornerborder fit bgc1" id="infosectionP2">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h2 id="main-headline" class="center Cw bold">Alexander Schnabl</h2>
-                        <div class="decoline halfmarginLR"></div>
-                        <h3 id="main-headline" class="Cw">Media Technology</h3>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="center three columns">
-                        <div class="infocard">
-                            
-                            <img class="infico" src="icons/design.svg" alt="Star-Icon">
-                            <h3 class="mediatechnology">Graphic Design</h3>
-                            <ul class="mediatechnology">
-                                <li class="mediatechnology">Logo creation</li>
-                                <li class="mediatechnology">Illustrations</li>
-                                <li class="mediatechnology">Image/video editing</li>
-                                <li class="mediatechnology">Print</li>
-                            </ul> 
-                        </div>
-                    </div>
-
-                    <div class="center three columns">
-                        <div class="infocard">
-                            
-                            <img class="infico" src="icons/webdesign.svg" alt="Star-Icon">
-                            <h3 class="mediatechnology">Webdesign</h3>
-                            <ul class="mediatechnology">
-                                <li class="mediatechnology">Frontend Development</li>
-                                <li class="mediatechnology">Frameworks</li>
-                                <li class="mediatechnology">CMS</li>
-                            </ul> 
-                        </div>
-                    </div>
-
-                    <div class="center three columns">
-                        <div class="infocard">
-                            
-                            <img class="infico" src="icons/3d.svg" alt="Star-Icon">
-                            <h3 class="mediatechnology">3D</h3>
-                            <ul class="mediatechnology">
-                                <li class="mediatechnology">Scenes</li>
-                                <li class="mediatechnology">Animations</li>
-                                <li class="mediatechnology">Motion Tracking</li>
-                            </ul> 
-                        </div>
-                    </div>
-                    <div class="center three columns">
-                        <div class="infocard">
-                            <a href="web/aboutme.html" title="about me">
-                                <img id="cv-portrait" src="img/AS/Alexander_Schnabl_Portrait_FINAL.jpg" alt="Star-Icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="decoline thirdmarginLR fullXright" style="background-color:rgb(128, 20, 43);height:6px;margin-bottom: 16rem"></div>
-
-
-
-        <div class="container fit nopad">
-
-            <div class="decoline thirdmarginLR fullXleft" style="background-color:rgb(128, 20, 43);height:6px;"></div>
-            <h1>My Latest Production</h1>
-            <div class="row">
-                <img width="100%" src="img/projects/3D-bedroom.png">
-   
-            </iframe>
-            </div>
-        </div>
-        <div class="decoline thirdmarginLR fullXright" style="background-color:rgb(128, 20, 43);height:6px;margin-bottom: 16rem"></div>
-        
-
-
-
-
-
-
-
-        <div class="container fit nopad">
-
-            <div class="decoline thirdmarginLR fullXleft" style="background-color:rgb(128, 20, 43);height:6px;"></div>
-            <h1>My Projects</h1>
+    <div class="sitebackground">
+    <!--################################# WEBSITE CONTENT STARTS HERE #################################-->
+        <section class="js_hidden">
+            <h2>Myself</h2>
             
-            <div class="row bgc1">
-                
-                <div class="container" style="margin-top:3rem;height:fit-content;overflow-y: hidden;">
-                    <div class="row">
+            <table id="css-resp-hide-index-myself">
+                <tr>
+                    <td colspan="2">
+                        <p class="readcomfort" id="myself">
+                            My name is <span class="myself-skills">Alexander Schnabl</span> and I am 21 years old.
+                            <br />
+                            <br />
 
+                            I am a graduate of the IT-HTL Ybbs and have completed a 
+                            five-year training programme in the field of media technology and information technologies. 
+                            
+                            My knowledgement and interests, which match my previous experience, 
+                            are in the areas of 
+                            <span class="myself-skills">media design</span>, 
+                            <span class="myself-skills">web development</span>, 
+                            <span class="myself-skills">3D design</span> and 
+                            <span class="myself-skills">app development</span>. 
+                        </p>
+                    </td>
+                    <td rowspan="3">
+                        <img class="portrait js_hidden" src="img/Alex-freigestellt.png">
+                    </td>
+                </tr>
+                <tr class="js_hidden">
+                    <td>
+                        <h3>Contact</h3><br />
+                        <span class="subtext">alexander.schnabl@outlook.com<br />
+                        +43 650 2201053<br />
+                        3390 Melk<br />
+                        Austria</span><br />
+                        <span title="follow me on LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </span>
+                    </td>
+                    <td>
+                        <input type="submit" id="js_contactme" value="write an email" title="via Email"></input><br />
+                        <input type="submit" value="my vision" onclick="window.location.href='html/vision.html'"></input><br />
+                        <input type="submit" value="about me" onclick="window.location.href='html/about.html'"></input>
+                    </td>
+                </tr>
+            </table>
 
-                        <div class="center four columns">
-                            <a href="web/projects.html#project-video-pushyourlimits">
-                                <div class="infocard">
-                                    <div class="halfmarginTB" style="padding-top:2rem;padding-bottom:2rem">
-                                        <img class="preview-projects" src="img/projects/video_push your limits.png" alt="Star-Icon">
-                                        <h2 class="project-preview">Video Editing</h2>
-                                        <h3 class="project-preview">Push your Limits</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+            <!--for tablet devices-->
+            <table id="css-resp-show-index-myself-tablet">
+                <tr>
+                    <td colspan="3">
+                        <p class="readcomfort" id="myself">
+                            My name is <span class="myself-skills">Alexander Schnabl</span> and I am 21 years old.
+                            <br />
+                            <br />
 
-                        <div class="center four columns">
-                            <a href="web/projects.html#project-animation-motion-blender">
-                                <div class="infocard">
-                                    <div class="halfmarginTB" style="padding-top:2rem;padding-bottom:2rem">
-                                        <img class="preview-projects" src="img/projects/3D-bedroom.png" alt="Star-Icon">
-                                        <h2 class="project-preview">Modeling and Render</h2>
-                                        <h3 class="project-preview">3D</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            I am a graduate of the IT-HTL Ybbs and have completed a 
+                            five-year training programme in the field of media technology and information technologies. 
+                            
+                            My knowledgement and interests, which match my previous experience, 
+                            are in the areas of 
+                            <span class="myself-skills">media design</span>, 
+                            <span class="myself-skills">web development</span>, 
+                            <span class="myself-skills">3D design</span> and 
+                            <span class="myself-skills">app development</span>. 
+                        </p>
+                    </td>
+                </tr>
+                <tr class="js_hidden">
+                    <td>
+                        <h3>Contact</h3><br />
+                        <span class="subtext">alexander.schnabl@outlook.com<br />
+                        +43 650 2201053<br />
+                        3390 Melk<br />
+                        Austria</span><br />
+                        <span title="follow me on LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </span>
+                    </td>
+                    <td>
+                        <input type="submit" id="js_contactme" value="write an email" title="via Email"></input><br />
+                        <input type="submit" value="my vision" onclick="window.location.href='html/vision.html'"></input><br />
+                        <input type="submit" value="about me" onclick="window.location.href='html/about.html'"></input>
+                    </td>
+                    <td rowspan="2">
+                        <img class="portrait js_hidden" src="img/Alex-freigestellt.png">
+                    </td>
+                </tr>
+            </table>
+
+            <!--for smartphone devices-->
+            <table id="css-resp-show-index-myself-smartphone">
+                <tr>
+                    <td>
+                        <img class="portrait js_hidden" src="img/Alex-freigestellt.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="readcomfort" id="myself">
+                            My name is <span class="myself-skills">Alexander Schnabl</span> and I am 21 years old.
+                            <br />
+                            <br />
+
+                            I am a graduate of the IT-HTL Ybbs and have completed a 
+                            five-year training programme in the field of media technology and information technologies. 
+                            
+                            My knowledgement and interests, which match my previous experience, 
+                            are in the areas of 
+                            <span class="myself-skills">media design</span>, 
+                            <span class="myself-skills">web development</span>, 
+                            <span class="myself-skills">3D design</span> and 
+                            <span class="myself-skills">app development</span>. 
+                        </p>
+                    </td>
+                </tr>
+                <tr class="js_hidden">
+                    <td>
+                        <h3>Contact</h3><br />
+                        <span class="subtext">alexander.schnabl@outlook.com<br />
+                        +43 650 2201053<br />
+                        3390 Melk<br />
+                        Austria</span><br />
+                        <span title="follow me on LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="js_contactme" value="write an email" title="via Email"></input><br />
+                        <input type="submit" value="my vision" onclick="window.location.href='html/vision.html'"></input><br />
+                        <input type="submit" value="about me" onclick="window.location.href='html/about.html'"></input>
+                    </td>
+                    <td rowspan="2">
                         
-                        <div class="center four columns">
-                            <a href="web/projects/diploma-thesis.html#project-dipl" target="_blank">
-                                <div class="infocard">
-                                    <div class="halfmarginTB" style="padding-top:2rem;padding-bottom:2rem">
-                                    <img class="preview-projects" src="img/projects/Diplo-landingpage.png" alt="Star-Icon">
-                                    <h2 class="project-preview">Diploma Thesis</h2>
-                                    <h3 class="project-preview">DigitalMuse</h3>
-                                    </div>
-                                </div>
-                            </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+
+
+        <section class="js_hidden">
+            <h2>Projects</h2>
+            <q class="readcomfort">
+                I'm not just a graphic artist and designer. 
+                Thanks to my technical training, I also understand the complex 
+                processes that take place behind the user interface. 
+                This combination of 
+                <i><span class="color-cyan">creative design</span></i> and 
+                <i><span class="color-cyan">technical expertise</span></i>
+                enables me to develop comprehensive and well thought-out solutions.
+            </q>
+            <br />
+            <br />
+            
+            <div class="project-preview">
+
+                <a href="html/projects.html#anchor-projects-3d-bedroom">
+                    <div class="project-card js_hidden">
+                        <img class="project-preview-img" src="img/project-preview-images/3D_bedroom.png" alt="Project preview 1">
+                        <div class="overlay">
+                            <h4>3D</h4>
+                            <p class="project-preview-text">Bedroom concept in Blender</p>
                         </div>
-
-                        
-
-
-
-                        </div>
-                        <div class="row">
-                        <div class="center four columns">
-                            <a href="web/projects.html#project-picjar">
-                                <div class="infocard">
-                                    <div class="halfmarginTB" style="padding-top:2rem;padding-bottom:2rem">
-                                        <img class="preview-projects" src="img/projects/picjar-responsive.png" alt="Star-Icon">
-                                        <h2 class="project-preview">Responsive Webpage</h2>
-                                        <h3 class="project-preview">Project "Picjar"</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="center four columns">
-                            <a href="web/projects.html#digitalart">
-                                <div class="infocard">
-                                    <div class="halfmarginTB" style="padding-top:2rem;padding-bottom:2rem">
-                                    <img class="preview-projects" src="img/projects/Prosit Digital Art.png" alt="Star-Icon">
-                                    <h2 class="project-preview">Digital Art</h2>
-                                    <h3 class="project-preview">Illustrations</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="center four columns">
-                            <a href="web/projects.html#project-uiux">
-                                <div class="infocard">
-                                    <div class="halfmarginTB" style="padding-top:2rem;padding-bottom:2rem">
-                                        <img class="preview-projects" src="img/projects/Sportuhr.png" alt="Star-Icon">
-                                        <h2 class="project-preview">UIUX</h2>
-                                        <h3 class="project-preview">Sport watch</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        
                     </div>
-                    <div class="row">
-                        <div class="center six columns">
-                            <div class="decoline halfmarginLR"></div>
-                        </div>
-                        <div class="center six columns">
-                            <div class="decoline halfmarginLR"></div>
+                </a>
+                <a href="html/projects.html#anchor-projects-mediadesign-push_your_limits">
+                    <div class="project-card js_hidden">
+                        <img class="project-preview-img" src="img/project-preview-images/Mediadesign_push-your-limits.png" alt="Project preview 2">
+                        <div class="overlay">
+                            <h4>media design</h4>
+                            <p class="project-preview-text">Video - Push your Limits, motiongraphics in Premiere and After Effects</p>
                         </div>
                     </div>
-                    <div class="row">
+                </a>
+                <a href="html/projects.html#anchor-projects-mediadesign-digitalmuse">
+                    <div class="project-card js_hidden">
+                        <img class="project-preview-img" src="img/project-preview-images/Dipl_Mediadesign_DigitalMuse.png" alt="Project preview 3">
+                        <div class="overlay">
+                            <h4>media design</h4>
+                            <p class="project-preview-text">Diploma Thesis: DigitalMuse - virtual tour for city band</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="html/projects.html#anchor-projects-webdev-picjar">
+                    <div class="project-card js_hidden">
+                        <img class="project-preview-img" src="img/project-preview-images/Webdevelopment_picjar.png" alt="Project preview 4">
+                        <div class="overlay">
+                            <h4>web development</h4>
+                            <p class="project-preview-text">PicJar - Resposive Webpage created with skeleton and Boilerplate Framework.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="html/projects.html#anchor-projects-mediadesign-sportwatch">
+                    <div class="project-card js_hidden">
+                        <img class="project-preview-img" src="img/project-preview-images/Mediadesign_sportwatch.png" alt="Project preview 5">
+                        <div class="overlay">
+                            <h4>media design</h4>
+                            <p class="project-preview-text">UIUX - Development of a sports watch according to UI principles</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="html/projects.html#anchor-projects-appdev-photobooth">
+                    <div class="project-card js_hidden">
+                        <img class="project-preview-img" src="img/project-preview-images/coding_photobooth.png" alt="Project preview 6">
+                        <div class="overlay">
+                            <h4>App Development</h4>
+                            <p class="project-preview-text">Photobooth</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <br />
+            <input type="submit" value="discover more projects" onclick="window.location.href='html/projects.html'"></input>
 
-                        <div class="center twelve columns">
-                            <form action="web/projects.html" method="get">
-                                <input type="submit" value="Discover more projects"></input>
-                            </form>
+        </section>
+
+
+        <section class="js_hidden">
+            <div id="css-resp-index-exp-timeline-normal" class="container">
+                <div class="top-section">
+                    <h2>TimeLine</h2>
+                    <p class="date">today</p>
+                </div>
+                <div class="timeline">
+                    <div class="line"></div>
+                    
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <a href="html/experience.html#anchor-experience-timeline-austrian_armed_forces">
+                                    <h3>Austrian Armed Forces</h3>
+                                    <h4>military Service</h4>
+                                    <p class="date"> 6 months | Jul. 2023 - Jan. 2024</p>
+                                </a>
+                            </div>
                         </div>
-<!--
-                        <div class="center four columns">
-                            <form action="web/projects/diploma-thesis.html" method="get">
-                                <input type="submit" value="Discover my Diploma Thesis"></input>
-                            </form>
+                   
+                    <div class="section">
+                        <div class="bead"></div>
+                        <div class="content">
+                            <a href="html/experience.html#anchor-experience-timeline-it_htl_ybbs">
+                                <h3 title="Higher Federal Technical Collage of Information Technology Ybbs an der Donau (Lower Austria)">IT-HTL Ybbs</h3>
+                                <h4>Education</h4>
+                                <p class="date"> 5 years | Sep. 2018 - Jun. 2023</p>
+                            </a>
                         </div>
-                        <div class="center four columns">
-                            <form action="web/projects/illustration.html" method="get">
-                                <input type="submit" value="Discover my designs"></input>
-                            </form>
-                        </div>
+                    </div>
         
-                        <div class="center six columns">
-                            <form action="web/projects/homepage-creation.html" target="_blank" method="get">
-                                <input type="submit" value="About this Homepage" ></input>
-                            </form>
+                      <div class="section">
+                        <div class="bead"></div>
+                        <div class="content">
+                            <a href="html/experience.html#anchor-experience-timeline-jv_design">
+                                <h3>JV Design</h3>
+                                <h4>Internship as Webdeveloper</h4>
+                                <p class="date"> 2 months | Jul. 2021 - Aug. 2021</p>
+                            </a>
                         </div>
--->
                     </div>
-                </div>
-
-            </div> 
-        </div>
-        <div class="decoline thirdmarginLR fullXright" style="background-color:rgb(128, 20, 43);height:6px;margin-bottom: 16rem"></div>
- 
-    
-        <div class="container fit nopad">
-            <div class="decoline thirdmarginLR fullXleft" style="background-color:rgb(128, 20, 43);height:6px;"></div>
-            <h1>Get in touch</h1>
-            <div class="row bgc1">
-                
-                <div class="container" style="margin-top:3rem;height:fit-content;overflow-y: hidden;">
-                    <div class="row">
-                        <div class="center four columns">
-                            <p id="get-in-touch">
-                                If you have any inquiries, questions, or opportunities for collaboration, please don't hesitate to reach out. 
-                            </p>
-                            <button id="contactme" class="space" onclick="openEmailClient()" title="via email">
-                                <span>Contact me </span>
-                            </button>
-                            <span class="note">
-                                <span id="big-special-character">&raquo;</span>
-                                This will open your mail client.</span>
-                            
-                            <script>
-                                function openEmailClient() {
-                                    window.location.href = 'mailto:alexander.schnabl@outlook.com';
-                                }
-                            </script>
-
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
+        
+                    <div class="section">
+                        <div class="bead"></div>
+                        <div class="content">
+                            <a href="html/experience.html#anchor-experience-timeline-fh_stp">
+                                <h3 title="University of Applied Science">FH St.Pölten</h3>
+                                <h4>Workshop Photography and Design</h4>
+                                <p class="date"> 2 weeks | Aug. 2018</p>
+                            </a>
                         </div>
-
-
-
-                        <div class="center five columns">
-                            <h2>Alexander Schnabl</h2>
-                            <div class="decoline halfmarginLR"></div>
-
-                            <form action="web/resume.html" method="get">
-                                <input type="submit" value="Timeline" ></input>
-                            </form>
-
-                            <form action="web/aboutme.html" method="get">
-                                <input class="vertical" type="submit" value="About me" ></input>
-                            </form>
-
-                            <div class="decoline halfmarginLR"></div>
-
-                            
-                            <p class="contact">
-                                <br>alexander.schnabl@outlook.com
-                                <br>+43 650 2201053
-                                <br>3390 Melk
-                                <br>Austria
-                            </p>
-                        </div>
-
-
-                        <div class="center three columns">
-                            <img id="cv-portrait" src="img/AS/Alexander_Schnabl_Portrait_FINAL.jpg"></img>
-                        </div>
-
-
                     </div>
+        
+                    <div class="section">
+                        <div class="bead"></div>
+                        <div class="content">
+                            <a href="html/experience.html#anchor-experience-timeline-sterngasse_brand">
+                                <h3>Sterngasse Brand</h3>
+                                <h4>Internship Design</h4>
+                                <p class="date"> 1 week | Jun. 2017</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
-        </div>
-    
 
-    
-        <div class="decoline thirdmarginLR fullXright" style="background-color:rgb(128, 20, 43);height:6px;margin-top:4rem"></div>
-    </div>
+            <div id="css-resp-index-exp-timeline-smartphone">
+                <h2>Media tech relevant Experience</h2>
+                <a href="html/experience.html#anchor-experience-timeline-austrian_armed_forces">
+                    <h3>Austrian Armed Forces</h3>
+                    <h4>military Service</h4>
+                    <p class="date"> 6 months | Jul. 2023 - Jan. 2024</p>
+                </a>
+                <div class="spacer"></div>
+                <a href="html/experience.html#anchor-experience-timeline-it_htl_ybbs">
+                    <h3 title="Higher Federal Technical Collage of Information Technology Ybbs an der Donau (Lower Austria)">IT-HTL Ybbs</h3>
+                    <h4>Education</h4>
+                    <p class="date"> 5 years | Sep. 2018 - Jun. 2023</p>
+                </a>
+                <div class="spacer"></div>
+                <a href="html/experience.html#anchor-experience-timeline-jv_design">
+                    <h3>JV Design</h3>
+                    <h4>Internship as Webdeveloper</h4>
+                    <p class="date"> 2 months | Jul. 2021 - Aug. 2021</p>
+                </a>
+                <div class="spacer"></div>
+                <a href="html/experience.html#anchor-experience-timeline-fh_stp">
+                    <h3 title="University of Applied Science">FH St.Pölten</h3>
+                    <h4>Workshop Photography and Design</h4>
+                    <p class="date"> 2 weeks | Aug. 2018</p>
+                </a>
+                <div class="spacer"></div>
+                <a href="html/experience.html#anchor-experience-timeline-sterngasse_brand">
+                    <h3>Sterngasse Brand</h3>
+                    <h4>Internship Design</h4>
+                    <p class="date"> 1 week | Jun. 2017</p>
+                </a>
+                <div class="spacer"></div>
 
-
-
-
-    <!--****************************************************************************************************************************************************************-->
-    </div><!--END OF SCREEN FORMAT-->
-    
-
-        <div class="container fit">
-            <footer>
-            <div class="row">
-                <div class="center twelve columns">
-                    <a class="footer-link" href="http://www.linkedin.com/in/alexander-schnabl-202a48235" target="_blank">LinkedIn</a>
-                    <span> | </span> 
-                    <a class="footer-link" href="https://github.com/a1exprod" target="_blank">GitHub</a>
-                    <br>
-                    <form action="web/impressum.html" target="_blank" method="get">
-                        <input type="submit" value="disclosure obligation"></input>
-                    </form>
-                </div>
             </div>
-            <div class="row">
-                <div class="center twelve columns">
-                    <span id="website-creator">2024 - Website creator: Alexander Schnabl</span>
-                </div>
-            </div>
-        </footer>
+            <input type="submit" value="more details about my experience" onclick="window.location.href='html/experience.html#anchor-experience-timeline'"></input>
+           
+            
+        
+        </section>
+
+
+        
+
     
-        </div>
+    <!--################################# WEBSITE CONTENT ENDS HERE #################################-->
+    </div><!--end of sitebackground-->
+    <footer>
+        <a href="https://www.linkedin.com/in/alexander-schnabl-202a48235/" target="_blank" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" style="fill:#000000;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <g transform="scale(5.12,5.12)">
+                        <path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <a href="https://github.com/a1exprod" target="_blank" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" style="fill:#000000;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <g transform="scale(5.12,5.12)">
+                        <path d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"></path>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <p class="thin">2024 - website developer & designer: Alexander Schnabl</p>
+        <a href="html/impressum.html">legal notice</a>
+    </footer>
+
+    
 </body>
 </html>

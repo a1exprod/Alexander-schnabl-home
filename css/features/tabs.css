@@ -1,0 +1,69 @@
+@import url('../fonts.css');
+@import url('../CICD-Policy.css');
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1310px) {
+    .tabs {
+        flex-direction: column;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .h2-tabs {
+        padding: 0;
+    }
+}
+
+
+
+h2.h2-tabs {
+    margin: 0 !important;
+    padding: 0.2em !important;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+
+
+h2.h2-tabs:hover {
+    opacity: 0.75;
+}
+
+.tabs-label {
+    padding: 10px 10px;
+    cursor: pointer;
+    
+}
+
+.tabs-radio {
+    display: none;
+}
+
+.tabs-content {
+    order: 1;
+    width: 100%;
+    line-height: 1;
+    display: none;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.tabs-radio:checked + .tabs-label {
+    opacity: 0.4;
+    border: 8px solid transparent;
+    border-bottom-color: var(--beige);
+    border-top-color: var(--beige);
+}
+
+.tabs-radio:checked + .tabs-label + .tabs-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}

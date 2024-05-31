@@ -1,0 +1,175 @@
+/*
+!
+!
+!
+!
+!
+its important to only say "KLEINER ALS" ONLY
+    wenn es kleiner als des tablet (w1640) wird dann soll ...
+    ...different site specific header background will be replaced by standard landingpage.jpg
+!
+!
+!
+!
+!
+
+TABLET sized:  (surface w912)
+ > w1640 :  different site specific header background will be replaced by standard landingpage.jpg
+            replace site headline to site specific headline (except index.html)
+            timeline should be preloaded
+            img gallery should be smaller
+            img collage (software and about myself priv images) should be smaller
+
+MINI TABLET sized:
+ > w768 :   nav fixing (not hamburger - normal) - funfact: only on index.html its a problem
+            repositioning of index - myself (text - img - contact - buttons in a column) 
+                vision - myself (text - img) same as on index.html
+            *project previews should only 1 in a column (probly fixable in styles.css)
+            iframe yt - center and resize
+            projects - webdev/3D/appdev - wrong img size (not gallery - normal image)
+
+SMARTPHONE sized:
+ > w430 :   header motion-graphic should disappear
+            hamburger nav fixing
+            *project previews working here - 
+            display timeline content right hand site only
+            about - icons in 1 column
+*/
+
+table#css-resp-show-index-myself-tablet,
+table#css-resp-show-index-myself-smartphone {
+    display: none;
+}
+
+#css-resp-show-vision-intro-smartphone,
+#css-resp-show-vision-intro-tablet {
+    display: none;
+}
+#css-resp-index-exp-timeline-smartphone {
+    display:none;
+}
+
+
+
+
+
+
+@media (max-width: 1600px) {
+    header.about,
+    header.experience,
+    header.impressum,
+    header.projects,
+    header.home,
+    header.vision {
+      background-image: url('../img/header/Landingpage.jpg');
+    }
+    #css-resp-smalldevice-title {
+        display: block;
+        margin-bottom: 10em;
+    }
+    #name {
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) { 
+    img.portrait {
+        max-height: 45vh;
+    }
+
+    table#css-resp-hide-index-myself {
+        display: none;
+    }
+    table#css-resp-show-index-myself-tablet {
+        display: block;
+    }
+    img.proj-title-img {
+        width: 80vw !important;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
+        width: 61vw;
+        height: 33vh;
+    }
+    img.pic {
+        width: 75vh;
+    }
+    #css-resp-show-vision-intro-normal {
+        display: none;
+    }
+    #css-resp-show-vision-intro-tablet {
+        display: block;
+    }
+
+}
+
+
+  
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    #header-animation {
+        display: none !important;
+      }
+
+    table#css-resp-show-index-myself-tablet {
+        display: none;
+    }
+    table#css-resp-show-index-myself-smartphone {
+        display: block;
+    }
+
+    section.css_hide_phone {
+        display: none;
+    }
+
+    #css-resp-show-vision-intro-tablet {
+        display: block;
+    }
+
+    #css-resp-index-exp-timeline-normal {
+        display: none;
+    }
+    #css-resp-index-exp-timeline-smartphone {
+        display: block;
+    }
+
+
+   
+}
+  
+
+
+
+
+
+
+
+
+@media (max-width: 430px) {
+
+    
+}
+  

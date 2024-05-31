@@ -1,0 +1,140 @@
+@import url('fonts.css');
+
+
+
+/*################################# PROJECT CARDS*/
+.project-preview,.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Genau 3 Spalten */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card,.hobbies-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-preview-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover .project-preview-img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+p.project-preview-text {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Media query to adjust for smaller screens */
+@media (max-width: 700px) {
+    .project-preview {
+        grid-template-columns: 1fr; /* 1 Spalten auf mittelgroßen Bildschirmen */
+    }
+    .project-preview-img {
+        max-width: 50vw;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .project-preview {
+        grid-template-columns: 1fr; /* 1 Spalte auf kleinen Bildschirmen */
+    }
+}
+
+
+
+
+/*################################# Footer*/
+
+
+footer a {
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer a.legal-notice {
+    font-size: 1.5em;
+}
+
+
+p#myself{
+    font-family: poppins-extralight;
+}
+
+
+/*################################# about me - hobbies*/
+
+img.symbols {
+    width: 10vw;
+    height: auto;
+    display: block;
+    margin:auto;
+}
+
+p.hobby {
+    font-family: poppins-Light;
+    text-align: center;
+}
+
+table.language,table.impressum {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: poppins-regular;
+    align-items: center;
+    min-width: 0;
+}
+
+table.language td {
+    text-align: right;
+}
+
+table.language td + td {
+    text-align: left;
+}
+
+td.projects {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 50%; /* Beispiel: Jede Zelle nimmt 25% der Tabellenbreite ein */
+}
+
+
+/*################################# index - myself*/
+
+.myself-skills {
+    font-family: Poppins-Semibold;
+    color: var(--cyan);
+}

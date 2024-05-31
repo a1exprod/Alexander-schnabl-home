@@ -1,0 +1,351 @@
+@import url('fonts.css');
+
+/*################################# COLOR SHEME und * HTML BODY tag */
+:root {
+    --k-orange: #F25922;
+    --b-orange: #F28963;
+    --beige: #F2E6D8;
+    --cyan: #0396A6;
+    --blau: #0388A6;
+    --black-1: #1D1D1D;
+    --black-2: #565656;
+}
+
+.color-cyan {
+    color: var(--cyan);
+}
+
+.color-blue {
+    color: var(--blau);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-family: poppins-regular;
+    color: var(--blau);
+}
+
+/*
+html, header, footer {
+    scroll-snap-type: y proximity;
+}
+*/
+
+/*################################# responsive font size */
+/*font-size: clamp(min, current, high)*/
+
+h1 {font-size: clamp(25px, 10vw, 75px);}
+h2 {font-size: clamp(20px, 9vw, 65px);}
+h3 {font-size: clamp(15px, 5vw, 35px);}
+h4 {font-size: clamp(15px, 3vw, 25px);}
+
+q,p,span,.nav-text{font-size: clamp(15px, 1.7vw, 25px);}
+p.focuspoint-text {font-size: clamp(20px, 3vw, 65px);}
+p.hobby {font-size: clamp(14px, 1.3vw, 20px)}
+.subtext{font-size: clamp(15px, 1.5vw, 20px);}
+.date{font-size: clamp(15px, 1.3vw, 17px);}
+
+nav ul li a{font-size: clamp(15px, 1.8vw, 25px);}
+
+input[type=submit] {font-size: clamp(15px, 1.5vw, 20px);}
+
+
+/*################################# Margin / paddings and elements */
+header {
+    position: relative;
+    z-index: 1;
+    background-image: url('../img/header/Landingpage.jpg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Sicherstellen, dass das pseudo-Element nicht herausragt */
+}
+header.home {
+    background-image: url('../img/header/home.png');
+}
+header.projects {
+    background-image: url('../img/header/projects.png');
+}
+header.experience {
+    background-image: url('../img/header/experience.png');
+}
+header.vision {
+    background-image: url('../img/header/vision.png');
+}
+header.about {
+    background-image: url('../img/header/about.png');
+}
+header.legal-notice {
+    background-image: url('../img/header/legal-notice.png');
+}
+
+.sitebackground {
+    background-color: black;
+    padding-bottom: 20vh; /*space between last section element to footer*/
+    padding-top: 5vh; /*space between first section element to header*/
+    z-index: 0;
+}
+
+.spacer {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    margin-top: 0;
+}
+
+footer {
+    background-color: var(--blau);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+/*################################# Headlines */
+
+h1{
+    text-transform: uppercase;
+    font-family: Poppins-Bold;
+    color:var(--beige);
+    text-align: center;
+    line-height: 0.75;
+    margin-top: 5em;
+}
+
+#name {
+        text-transform: uppercase;
+        font-family: Poppins-Black;
+        color:white;
+        text-align: center;
+        line-height: 0.75;
+}
+
+/*for general devices */
+#css-resp-smalldevice-title {
+    display: none;
+}
+
+
+
+h2 {
+    text-transform: uppercase;
+    color: var(--k-orange);
+    font-family: Poppins-black;
+    text-align: center;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+
+h3 {
+    text-transform: lowercase;
+    color: var(--b-orange);
+    font-family: Poppins-bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+h4 {
+    text-transform: lowercase;
+    color: var(--cyan);
+    font-family: Poppins-bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+/*################################# Text */
+p,span {
+    font-family: Poppins-Light;
+}
+
+q {
+    font-family: Poppins-ThinItalic;
+    text-align: center;
+}
+
+q,p.readcomfort {
+    width: 75%;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.date {
+    font-family: Poppins-ExtraLight;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+
+.bold {
+    font-family: Poppins-bold;
+}
+.italic {
+    font-family: Poppins-italic;
+}
+
+.thin {
+    font-family: Poppins-thin;
+}
+
+
+/*################################# invisible table */
+
+table {
+    text-align: center;
+    padding: 1rem;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+line-height: -2vw;
+}
+
+td {
+padding: 1rem;
+text-align: center;
+}
+
+/*################################# invisible Lists */
+ul {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-family: poppins-regular;
+}
+
+/*################################# buttons*/
+
+input[type=submit] {
+    background-color: transparent;
+    border: 3px solid var(--k-orange);
+    color: white;
+    padding: 20px 60px;
+    margin: 10px 0;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 
+        background-color 0.6s ease, 
+        color 0.6s ease, 
+        box-shadow 0.6s ease;
+}
+input[type=submit]:hover {
+    box-shadow: 0 2px 16px black;
+    transform: scale(1.1);
+    transition: 
+        transform 0.6s ease, 
+        box-shadow 0.6s ease;
+}
+
+label {
+    font-family: poppins-thin;
+    color: white !important;
+}
+
+/*################################# img*/
+
+
+/*################################# svg*/
+svg {
+    max-height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+svg:hover {
+    transform: scale(1.2);
+    transition: 
+        transform 0.8s ease;
+}
+
+svg.hobbies {
+    max-height: 30vh;
+}
+
+/*################################# footer*/
+footer a {
+    font-family: poppins-bold;
+    text-decoration: underline;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+footer a:hover {
+    transform: scale(1.2);
+
+}
+
+#version {
+    margin: 1em;
+    font-family: poppins-thin;
+}
+
+/*################################# img/iframe/video/ico/svg*/
+
+iframe {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 33vw;
+    height: 40vh;
+    border-radius: 1em;
+}
+
+img {
+    border-radius: 1rem;
+    max-height: 75vh;
+}
+
+
+img.proj-title-img,
+img.pic {
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+img.portrait {
+    max-height: 70vh;
+}
+

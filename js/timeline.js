@@ -1,19 +1,50 @@
-jQuery(document).ready(function($){
-	var $timeline_block = $('.cd-timeline-block');
+function qs(selector, all = false) {
+    return all ? document.querySelectorAll(selector) : document.querySelector(selector);
+}
 
-	//hide timeline blocks which are outside the viewport
-	$timeline_block.each(function(){
-		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
-			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-		}
-	});
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = qs('.section', true);
+    const timeline = qs('.timeline');
+    const line = qs('.line');
+    line.style.bottom = `calc(100% - 20px)`;
+    let prevScrollY = window.scrollY;
+    let up, down;
+    let full = false;
+    let set = 0;
+    const targetY = window.innerHeight * 0.8;
 
-	//on scolling, show/animate timeline blocks when enter the viewport
-	$(window).on('scroll', function(){
-		$timeline_block.each(function(){
-			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
-				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-			}
-		});
-	});
+    function scrollHandler(e) {
+        const { scrollY } = window;
+        up = scrollY < prevScrollY;
+        down = !up;
+        const timelineRect = timeline.getBoundingClientRect();
+        const lineRect = line.getBoundingClientRect(); //CONST LINEHEIGHT = lineRect.bottom - lineRect.top
+
+        const dist = targetY - timelineRect.top;
+        console.log(dist);
+
+        if (down && !full) {
+            set = Math.max(set, dist);
+            line.style.bottom = `calc(100% - ${set}px)`;
+        }
+
+        if (dist > timeline.offsetHeight + 50 && !full) {
+            full = true;
+            line.style.bottom = `-50px`;
+        }
+
+        sections.forEach(item => {
+            const rect = item.getBoundingClientRect();
+
+            if (rect.top + item.offsetHeight / 5 < targetY) {
+                item.classList.add('show-me');
+            }
+        });
+
+        prevScrollY = window.scrollY;
+    }
+
+    scrollHandler();
+    line.style.display = 'block';
+    window.addEventListener('scroll', scrollHandler);
 });

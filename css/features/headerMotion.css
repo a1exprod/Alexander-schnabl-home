@@ -1,0 +1,52 @@
+@import url('../fonts.css');
+@import url('../CICD-Policy.css');
+
+
+
+#header-animation {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15em;
+    height: 15em;
+    margin-top: 5em;
+    margin-right: 5em;
+    perspective: 800px; /* Perspektive für Tiefeneffekt */
+}
+
+.header-point-motion {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black; /* Anfangsfarbe */
+    border-radius: 50%;
+    opacity: 0;
+    animation: animateDot 10s infinite;
+}
+
+@keyframes animateDot {
+    0% {
+        transform: translateZ(0) scale(1);
+        opacity: 0;
+        background-color: var(--k-orange); /* Startfarbe */
+    }
+    5% {
+        transform: translateZ(0) scale(1);
+        opacity: 0.2;
+        background-color: var(--k-orange); /* Startfarbe */
+    }
+    12% {
+        transform: translateZ(0) scale(1);
+        opacity: 1;
+        background-color: var(--k-orange); /* Startfarbe */
+    }
+    50% {
+        opacity: 0.5;
+        background-color: var(--cyan); /* Farbe in der Mitte */
+    }
+    100% {
+        transform: translateZ(-500px) scale(0.1);
+        opacity: 0;
+        background-color: var(--b-orange); /* Endfarbe */
+    }
+}

@@ -30,7 +30,7 @@
 
 a {
     text-decoration: none;
-    font-family: poppins-regular;
+    font-family: Poppins-Regular;
     color: var(--blau);
 }
 
@@ -159,7 +159,7 @@ h1{
 h2 {
     text-transform: uppercase;
     color: var(--k-orange);
-    font-family: Poppins-black;
+    font-family: Poppins-Black;
     text-align: center;
     margin: 1em;
     margin-top: 2em;
@@ -169,7 +169,7 @@ h2 {
 h3 {
     text-transform: lowercase;
     color: var(--b-orange);
-    font-family: Poppins-bold;
+    font-family: Poppins-Bold;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -180,7 +180,7 @@ h3 {
 h4 {
     text-transform: lowercase;
     color: var(--cyan);
-    font-family: Poppins-bold;
+    font-family: Poppins-Bold;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -216,14 +216,14 @@ q,p.readcomfort {
 }
 
 .bold {
-    font-family: Poppins-bold;
+    font-family: Poppins-Bold;
 }
 .italic {
-    font-family: Poppins-italic;
+    font-family: Poppins-Italic;
 }
 
 .thin {
-    font-family: Poppins-thin;
+    font-family: Poppins-Thin;
 }
 
 
@@ -253,7 +253,7 @@ ul {
 
 li {
     list-style: none;
-    font-family: poppins-regular;
+    font-family: Poppins-Regular;
 }
 
 /*################################# buttons*/
@@ -280,7 +280,7 @@ input[type=submit]:hover {
 }
 
 label {
-    font-family: poppins-thin;
+    font-family: Poppins-Thin;
     color: white !important;
 }
 
@@ -306,7 +306,7 @@ svg.hobbies {
 
 /*################################# footer*/
 footer a {
-    font-family: poppins-bold;
+    font-family: Poppins-Bold;
     text-decoration: underline;
     display: inline-block;
     transition: transform 0.3s ease, font-size 0.3s ease;
@@ -318,7 +318,7 @@ footer a:hover {
 
 #version {
     margin: 1em;
-    font-family: poppins-thin;
+    font-family: Poppins-Thin;
 }
 
 /*################################# img/iframe/video/ico/svg*/

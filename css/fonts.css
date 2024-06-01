@@ -9,11 +9,11 @@
 }
 @font-face {
     font-family: 'Poppins-Bold';
-    src: url('../fonts/poppins/poppins-Bold.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Poppins-BoldItalic';
-    src: url('../fonts/exo/poppins-BoldItalic.ttf') format('truetype');
+    src: url('../fonts/exo/Poppins-BoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Poppins-ExtraBold';
@@ -57,11 +57,11 @@
 }
 @font-face {
     font-family: 'Poppins-Semibold';
-    src: url('../fonts/poppins/Poppins-Semibold.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Poppins-SemiboldItalic';
-    src: url('../fonts/poppins/Poppins-SemiboldItalic.ttf') format('truetype');
+    src: url('../fonts/poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Poppins-Thin';

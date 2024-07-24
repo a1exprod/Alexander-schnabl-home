@@ -63,7 +63,8 @@ input[type=submit] {font-size: clamp(15px, 1.5vw, 20px);}
 header {
     position: relative;
     z-index: 1;
-    background-image: url('../img/header/Landingpage.jpg');
+    background-image: url('../img/header/Background.svg');
+    background-color: black;
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -72,24 +73,7 @@ header {
     margin: 0;
     overflow: hidden; /* Sicherstellen, dass das pseudo-Element nicht herausragt */
 }
-header.home {
-    background-image: url('../img/header/home.png');
-}
-header.projects {
-    background-image: url('../img/header/projects.png');
-}
-header.experience {
-    background-image: url('../img/header/experience.png');
-}
-header.vision {
-    background-image: url('../img/header/vision.png');
-}
-header.about {
-    background-image: url('../img/header/about.png');
-}
-header.legal-notice {
-    background-image: url('../img/header/legal-notice.png');
-}
+
 
 .sitebackground {
     background-color: black;

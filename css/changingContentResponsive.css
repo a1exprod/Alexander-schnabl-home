@@ -55,14 +55,7 @@ table#css-resp-show-index-myself-smartphone {
 
 
 @media (max-width: 1600px) {
-    header.about,
-    header.experience,
-    header.impressum,
-    header.projects,
-    header.home,
-    header.vision {
-      background-image: url('../img/header/Landingpage.jpg');
-    }
+
     #css-resp-smalldevice-title {
         display: block;
         margin-bottom: 10em;
